@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+
+
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/parent_constraint"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+
+        android:layout_height="match_parent" android:layout_width="match_parent"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/headshapetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/temp_edittext"
+            android:layout_marginTop="18dp"
+
+
+            android:gravity="center"
+            android:text="Head Shape"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/headsizeetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headshapetext"
+            android:layout_marginTop="18dp"
+            android:gravity="left"
+            android:text="Head Size"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/head_shape_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/temp_edittext"
+            android:layout_toRightOf="@+id/headshapetext"
+
+            android:layout_marginTop="16dp"
+            android:entries="@array/Shape"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:tooltipText="head shape"
+
+            />
+
+        <Spinner
+
+            android:id="@+id/head_size_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/head_shape_spinner"
+            android:layout_marginTop="16dp"
+            android:entries="@array/Size"
+            android:layout_toRightOf="@+id/headsizeetext"
+            android:textAlignment="center">
+
+        </Spinner>
+        <TextView
+            android:id="@+id/swelling_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Swelling"
+
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/headsizeetext"
+
+            >
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/Head_swelling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/head_size_spinner"
+            android:layout_marginTop="16dp"
+            android:entries="@array/Swelling"
+            android:gravity="center"
+            android:layout_toRightOf="@id/swelling_textview"
+            android:textAlignment="center">
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/eyesright_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eyes Right"
+            android:textSize="15sp"
+            android:layout_marginTop="19dp"
+            android:layout_below="@id/swelling_textview"
+
+            >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/eyes_right_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:entries="@array/Eyes_Right"
+            android:textAlignment="center"
+            android:layout_toRightOf="@+id/eyesright_textview"
+            android:layout_below="@+id/Head_swelling"
+
+            >
+
+        </Spinner>
+        <TextView
+            android:id="@+id/eyesleft_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eyes Left"
+
+            android:textSize="15sp"
+            android:layout_marginTop="19dp"
+            android:layout_below="@id/eyesright_textview"
+
+            >
+
+        </TextView>
+        <Spinner
+            android:id="@+id/eyes_left_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:entries="@array/Eyes_Left"
+            android:layout_toRightOf="@+id/eyesleft_textview"
+            android:layout_below="@id/eyes_right_spinner"
+            android:textAlignment="center"
+            >
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/earsright_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ears Right"
+
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/eyesleft_textview"
+
+            >
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/ears_right_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+
+            android:entries="@array/Eyes_Right"
+
+            android:textAlignment="center"
+            android:layout_toRightOf="@+id/earsright_textview"
+            android:layout_below="@+id/eyes_left_spinner"
+            >
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/earsleft_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ears Left"
+
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/earsright_textview"
+
+            >
+
+        </TextView>
+        <Spinner
+            android:id="@+id/ears_left_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:entries="@array/Ears_Left"
+            android:textAlignment="center"
+            android:layout_toRightOf="@+id/earsleft_textview"
+            android:layout_below="@+id/ears_right_spinner"
+            >
+
+        </Spinner>
+        <TextView
+            android:id="@+id/nose_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nose"
+
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/earsleft_textview"
+
+            >
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/nose_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Nose"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center"
+            android:layout_toRightOf="@+id/nose_textview"
+            android:layout_below="@id/ears_left_spinner">
+
+        </Spinner>
+        <TextView
+            android:id="@+id/lips_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lips"
+
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/nose_textview"
+
+            >
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/mouth_lips_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nose_spinner"
+            android:layout_marginTop="18dp"
+            android:entries="@array/Mouth_Lips"
+            android:layout_toRightOf="@+id/lips_textview"
+            android:textAlignment="center">
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/chin_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chin"
+
+            android:textSize="16sp"
+            android:layout_marginTop="19dp"
+            android:layout_below="@id/lips_textview"
+
+            >
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/mouth_chin_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mouth_lips_spinner"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/chin_textview"
+            android:entries="@array/Mouth_Chin"
+            android:textAlignment="center">
+
+        </Spinner>
+        <TextView
+            android:id="@+id/facialappearance_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="facial appearance "
+
+            android:textSize="12sp"
+            android:layout_marginTop="21dp"
+            android:layout_below="@id/chin_textview"
+
+            >
+
+        </TextView>
+        <Spinner
+            android:id="@+id/Facial_appearance_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:entries="@array/Over_facial_appearance"
+            android:textAlignment="center"
+            android:layout_toRightOf="@+id/facialappearance_textview"
+            android:layout_below="@+id/mouth_chin_spinner"
+            >
+
+        </Spinner>
+        <TextView
+            android:id="@+id/featuresreletd_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Features relating To"
+            android:textSize="12sp"
+            android:layout_marginTop="21dp"
+            android:layout_below="@id/facialappearance_textview"
+
+            >
+
+        </TextView>
+        <Spinner
+            android:id="@+id/feature_related_to_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:entries="@array/Facial_relating_to"
+            android:textAlignment="center"
+            android:layout_toRightOf="@+id/featuresreletd_textview"
+            android:layout_below="@id/facialappearance_textview"
+            >
+
+        </Spinner>
+        <TextView
+            android:id="@+id/neck_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Neck"
+
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/featuresreletd_textview"
+
+            >
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/neck_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feature_related_to_spinner"
+            android:layout_marginTop="17dp"
+            android:entries="@array/Neck"
+            android:layout_toRightOf="@+id/neck_textview"
+
+            android:textAlignment="center">
+
+        </Spinner>
+        <TextView
+            android:id="@+id/chest_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chest"
+
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/neck_textview"
+
+            >
+
+        </TextView>
+        <Spinner
+            android:id="@+id/chest_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:entries="@array/Chest"
+            android:textAlignment="center"
+            android:layout_toRightOf="@id/chest_textview"
+            android:layout_below="@+id/neck_spinner"
+            >
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/rightupperlimb_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chest_textview"
+
+            android:layout_marginTop="20dp"
+            android:text="Right Upper Limb"
+            android:textSize="12sp"
+
+            >
+
+        </TextView>
+        <Spinner
+            android:id="@+id/right_upper_limb_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Right_Upper_limb"
+            android:layout_below="@+id/chest_spinner"
+            android:textAlignment="center"
+            android:layout_marginTop="17dp"
+            android:layout_toRightOf="@+id/rightupperlimb_textview"
+            >
+
+        </Spinner>
+        <TextView
+            android:id="@+id/leftupperlimb_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Left Upper Limb"
+
+            android:textSize="12sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/rightupperlimb_textview"
+
+            >
+
+        </TextView>
+        <Spinner
+            android:id="@+id/left_upper_limb_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Left_Upper_limb"
+            android:textAlignment="center"
+            android:layout_marginTop="17dp"
+            android:layout_toRightOf="@+id/leftupperlimb_textview"
+            android:layout_below="@+id/right_upper_limb_spinner"
+            >
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/righthand_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/leftupperlimb_textview"
+            android:layout_marginTop="20dp"
+
+            android:text="Right Hand"
+            android:textSize="16sp"
+
+            >
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/right_hand_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/left_upper_limb_spinner"
+            android:layout_marginTop="17dp"
+            android:layout_toRightOf="@+id/righthand_textview"
+            android:entries="@array/Right_hand"
+            android:textAlignment="center">
+
+        </Spinner>
+        <TextView
+            android:id="@+id/lefthand_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/righthand_textview"
+            android:layout_marginTop="20dp"
+
+            android:text="Left Hand"
+            android:textSize="16sp"
+            >
+        </TextView>
+        <Spinner
+            android:id="@+id/left_hand_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Left_hand"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center"
+            android:layout_toRightOf="@+id/lefthand_textview"
+            android:layout_below="@id/right_hand_spinner"
+            >
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/abdomen_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lefthand_textview"
+            android:layout_marginTop="20dp"
+
+            android:text="Abdomen"
+            android:textSize="16sp"
+            >
+        </TextView>
+        <Spinner
+            android:id="@+id/abdomen_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Abdomen"
+            android:textAlignment="center"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/abdomen_textview"
+            android:layout_below="@id/left_hand_spinner"
+            >
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/umbilicus_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Umbilicus"
+
+            android:textSize="16sp"
+            android:layout_marginTop="21dp"
+            android:layout_below="@id/abdomen_textview"
+
+            >
+        </TextView>
+        <Spinner
+            android:id="@+id/umbilicus_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Umbilicus"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center"
+            android:layout_toRightOf="@+id/umbilicus_textview"
+            android:layout_below="@id/abdomen_spinner"
+            >
+
+        </Spinner>
+        <TextView
+            android:id="@+id/penis_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Penis"
+
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/umbilicus_textview"
+
+            >
+        </TextView>
+        <Spinner
+            android:id="@+id/Penis_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Penis"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center"
+            android:layout_toRightOf="@+id/penis_textview"
+            android:layout_below="@+id/umbilicus_spinner"
+            >
+
+        </Spinner>
+        <TextView
+            android:id="@+id/scrotum_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scrotum"
+
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/penis_textview"
+
+            >
+        </TextView>
+        <Spinner
+            android:id="@+id/scrotum_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Scrotum"
+            android:layout_below="@id/Penis_spinner"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/scrotum_textview"
+            android:textAlignment="center"
+            >
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/femalegenetalia_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female Genitalia"
+
+            android:textSize="14sp"
+            android:layout_marginTop="21dp"
+            android:layout_below="@id/scrotum_textview"
+
+            >
+        </TextView>
+        <Spinner
+            android:id="@+id/female_Genitalia_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Female_Genitalia"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center"
+            android:layout_toRightOf="@+id/femalegenetalia_textview"
+
+            android:layout_below="@+id/scrotum_spinner"
+            >
+
+        </Spinner>
+        <TextView
+            android:id="@+id/legsposition_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leg's Position"
+
+            android:textSize="15sp"
+            android:layout_marginTop="21dp"
+            android:layout_below="@id/femalegenetalia_textview"
+
+            >
+        </TextView>
+        <Spinner
+            android:id="@+id/legs_position_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Legs_position"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/legsposition_textview"
+            android:textAlignment="center"
+            android:layout_below="@+id/female_Genitalia_spinner"
+            >
+
+        </Spinner>
+        <TextView
+            android:id="@+id/rightlowerlimb_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Right Lower Limb"
+
+            android:textSize="13sp"
+            android:layout_marginTop="22dp"
+            android:layout_below="@id/legsposition_textview"
+
+            >
+        </TextView>
+        <Spinner
+            android:id="@+id/right_lower_limb_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Right_lower_Limb"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center"
+            android:layout_toRightOf="@+id/rightlowerlimb_textview"
+            android:layout_below="@id/legs_position_spinner"
+            >
+
+        </Spinner>
+        <TextView
+            android:id="@+id/leftlowerlimb_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Left Lower Limb"
+
+            android:textSize="13sp"
+            android:layout_marginTop="21dp"
+            android:layout_below="@id/rightlowerlimb_textview"
+
+            >
+        </TextView>
+        <Spinner
+            android:id="@+id/left_lower_limb_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/left_lower_Limb"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center"
+            android:layout_toRightOf="@+id/rightlowerlimb_textview"
+            android:layout_below="@+id/right_lower_limb_spinner"
+            >
+
+        </Spinner>
+        <TextView
+            android:id="@+id/rightfoot_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Right Foot"
+
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/leftlowerlimb_textview"
+
+            >
+        </TextView>
+        <Spinner
+            android:id="@+id/right_foot_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Right_foot"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center"
+            android:layout_toRightOf="@id/rightfoot_textview"
+            android:layout_below="@+id/left_lower_limb_spinner"
+            >
+
+        </Spinner>
+        <TextView
+            android:id="@+id/leftfoot_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Left Foot"
+
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/rightfoot_textview"
+
+            >
+        </TextView>
+        <Spinner
+            android:id="@+id/left_foot_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Left_foot"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center"
+            android:layout_toRightOf="@+id/leftfoot_textview"
+            android:layout_below="@+id/right_foot_spinner"
+            >
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/back_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/leftfoot_textview"
+
+            >
+        </TextView>
+        <Spinner
+            android:id="@+id/back_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Back"
+            android:layout_below="@+id/left_foot_spinner"
+            android:layout_marginTop="17.5dp"
+            android:layout_toRightOf="@+id/back_textview"
+            android:textAlignment="center"
+            >
+
+        </Spinner>
+        <TextView
+            android:id="@+id/color_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color"
+
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/back_textview"
+
+            >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/color_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Color"
+            android:layout_marginTop="19dp"
+            android:layout_toRightOf="@+id/color_textview"
+            android:textAlignment="center"
+            android:layout_below="@id/back_spinner"
+            >
+
+        </Spinner>
+
+        <Button
+            android:id="@+id/next"
+            android:backgroundTint="@color/teal_200"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/color_spinner"
+            android:layout_marginTop="20dp"
+            android:text="Next">
+
+        </Button>
+
+    </RelativeLayout>
+</ScrollView>

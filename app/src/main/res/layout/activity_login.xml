@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.LoginActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/gray"
+        app:cardBackgroundColor="@color/gray"
+
+        >
+
+        <TextView
+            android:id="@+id/indusvna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/view"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:text="INDUS VNA"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+
+            android:textSize="45sp"
+            android:textStyle="bold"
+
+
+            ></TextView>
+
+
+    </androidx.cardview.widget.CardView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/outlinedTextField"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:hint="Enter Email"
+                    app:boxStrokeColor="@color/teal_200"
+                    app:boxStrokeErrorColor="@color/red"
+                    android:layout_below="@+id/cardview"
+                    app:startIconDrawable="@drawable/ic_baseline_email_24"
+
+                    app:boxStrokeWidth="2dp">
+
+
+                    <EditText
+                        android:id="@+id/enter_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/outlinedTextField2"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:hint="Enter Password"
+                    app:boxStrokeColor="@color/teal_200"
+                    app:boxStrokeErrorColor="@color/red"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_below="@id/outlinedTextField"
+                    app:startIconDrawable="@drawable/ic_baseline_lock_24"
+
+                    app:boxStrokeWidth="2dp">
+
+                    <EditText
+                        android:id="@+id/phone_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+
+
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/signUp_button"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/outlinedTextField2"
+        android:layout_gravity="center"
+
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+
+        android:layout_marginRight="16dp"
+        android:backgroundTint="@color/green"
+        android:text="SIGN IN"
+
+        android:textColor="@color/white"
+        android:textSize="16sp"
+
+        />
+
+    <TextView
+        android:id="@+id/notuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signUp_button"
+        android:layout_gravity="center_horizontal"
+       android:layout_marginRight="70dp"
+        android:layout_marginTop="10dp"
+        android:text="Not a User? "
+        android:layout_alignRight="@+id/SignIn_button"
+
+        android:textSize="17sp">
+
+    </TextView>
+
+                <TextView
+                    android:id="@+id/SignIn_button"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:text=" Sign Up"
+                    android:textSize="18sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/signUp_button"
+                    android:layout_marginRight="16dp"
+
+                    android:layout_alignBaseline="@+id/notuser"
+                    android:textColor="@color/black"
+
+                    >
+
+                </TextView>
+</RelativeLayout>

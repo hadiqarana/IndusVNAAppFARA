@@ -1,0 +1,232 @@
+<resources>
+    <string name="app_name">IndusVNAApp</string>
+    <string name="hint_resource">head shape</string>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="sign_out">sign out</string>
+    <string-array name="Shape">
+        <item>Head Shape</item>
+        <item>Normal</item>
+        <item>Abnormal</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+    </string-array>
+    <string-array name="Size">
+        <item>Head Size</item>
+        <item>Looking Normal</item>
+        <item>Small </item>
+        <item>Large</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+    </string-array>
+    <string-array name="Swelling">
+        <item>Swelling</item>
+        <item>NO</item>
+        <item>Yes. On back of head</item>
+        <item>Yes.On right lateral side</item>
+        <item>Yes. On left lateral side</item>
+        <item>Yes. Above head</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+    </string-array>
+    <string-array name="Eyes_Right">
+        <item>Eyes Right</item>
+        <item>Normal</item>
+        <item>Abnormal</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+    </string-array>
+    <string-array name="Eyes_Left">
+        <item>Eyes Left</item>
+        <item>Normal</item>
+        <item>Abnormal</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+    </string-array>
+    <string-array name="Ears_Right">
+        <item>Ears Right</item>
+        <item>Normal</item>
+        <item>Abnormal</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+
+    </string-array>
+    <string-array name="Ears_Left">
+        <item>Ears Left</item>
+        <item>Normal</item>
+        <item>Abnormal</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+    </string-array>
+    <string-array name="Nose">
+        <item>Nose</item>
+        <item>Normal</item>
+        <item>Abnormal</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+    </string-array>
+    <string-array name="Mouth_Lips">
+        <item>Lips</item>
+        <item>Normal</item>
+        <item>Abnormal</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+    </string-array>
+    <string-array name="Mouth_Chin">
+        <item>Chin</item>
+        <item>Normal</item>
+        <item>Abnormal</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+        <item>Visible Teeth with open mouth</item>
+    </string-array>
+    <string-array name="Over_facial_appearance">
+        <item>Ovear all Facial Appearance</item>
+        <item>Normal</item>
+        <item>Abnormal</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+    </string-array>
+    <string-array name="Facial_relating_to">
+        <item>Features Relating To</item>
+        <item>Asian</item>
+        <item>African</item>
+        <item>European</item>
+    </string-array>
+    <string-array name="Neck">
+        <item>Neck</item>
+        <item>Normal</item>
+        <item>Abnormal</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+    </string-array>
+    <string-array name="Chest">
+        <item>Chest</item>
+        <item>Normal</item>
+        <item>Abnormal</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+    </string-array>
+    <string-array name="Right_Upper_limb">
+        <item>Right Upper Limb</item>
+        <item>Normal</item>
+        <item>Abnormal</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+    </string-array>
+    <string-array name="Left_Upper_limb">
+        <item>Left Upper Limb</item>
+        <item>Normal</item>
+        <item>Abnormal</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+    </string-array>
+    <string-array name="Right_hand">
+        <item>Right Hand</item>
+        <item>Normal</item>
+        <item>Abnormal</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+    </string-array>
+    <string-array name="Left_hand">
+        <item>Left Hand</item>
+        <item>Normal</item>
+        <item>Abnormal</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+    </string-array>
+    <string-array name="Abdomen">
+        <item>Abdomen</item>
+        <item>Normal</item>
+        <item>Abnormal</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+    </string-array>
+    <string-array name="Umbilicus">
+        <item>Umbilicus</item>
+        <item>Normal</item>
+        <item>Abnormal</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+
+    </string-array>
+    <string-array name="Penis">
+        <item>Penis</item>
+        <item>Normal</item>
+        <item>Abnormal</item>
+        <item>Not applicable</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+
+    </string-array>
+    <string-array name="Scrotum">
+        <item>Scrotum</item>
+        <item>Normal</item>
+        <item>Abnormal</item>
+        <item>Not applicable</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+    </string-array>
+    <string-array name="Female_Genitalia">
+        <item>Female Genitalia</item>
+        <item>Normal</item>
+        <item>Abnormal</item>
+        <item>Not applicable</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+    </string-array>
+    <string-array name="Legs_position">
+        <item>Legs position</item>
+        <item>Normal</item>
+        <item>Abnormal</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+    </string-array>
+    <string-array name="Right_lower_Limb">
+        <item>Right Lower Limb</item>
+        <item>Not clear</item>
+        <item>Normal</item>
+        <item>Abnormal</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+    </string-array>
+    <string-array name="left_lower_Limb">
+        <item>Left Lower Limb</item>
+        <item>Normal</item>
+        <item>Abnormal</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+    </string-array>
+    <string-array name="Right_foot">
+        <item>Right Foot</item>
+        <item>Normal</item>
+        <item>Abnormal</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+    </string-array>
+    <string-array name="Left_foot">
+        <item>Left Foot</item>
+        <item>Normal</item>
+        <item>Abnormal</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+    </string-array>
+    <string-array name="Back">
+        <item>Back</item>
+        <item>Normal</item>
+        <item>Abnormal</item>
+        <item>Not visualized</item>
+        <item>Cannot comment</item>
+    </string-array>
+    <string-array name="Color">
+        <item>Color</item>
+        <item>Pinkish white</item>
+        <item>Pinkish red</item>
+        <item>Light yellow</item>
+        <item>Dark yellow</item>
+        <item>Orange Yellow</item>
+        <item>Blue lips/finger/nose</item>
+    </string-array>
+
+
+</resources>

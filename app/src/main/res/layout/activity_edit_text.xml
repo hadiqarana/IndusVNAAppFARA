@@ -1,0 +1,303 @@
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:fillViewport="true"
+
+    >
+    <RelativeLayout
+        android:id="@+id/parent_constraint"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+
+        android:layout_height="match_parent" android:layout_width="match_parent"
+        android:orientation="vertical">
+
+
+         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/mrno1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+             app:boxStrokeColor="@color/teal_200"
+
+
+
+            >
+        <EditText
+            android:id="@+id/MR_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/green"
+            app:boxStrokeErrorColor="@color/red"
+            android:gravity="center"
+
+
+
+
+
+            android:hint="MR Number"
+            android:inputType="numberDecimal"
+
+            />
+         </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/headsize2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioSex"
+            app:boxStrokeColor="@color/teal_200"
+            >
+       <EditText
+           android:id="@+id/Head_size_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           app:boxStrokeColor="@color/teal_200"
+           app:boxStrokeErrorColor="@color/black"
+           android:gravity="center"
+           android:hint="Head Size (cm)"
+           android:inputType="numberDecimal"
+
+
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/Gender_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:layout_marginTop="10dp"
+
+            android:textSize="18sp"
+            android:layout_below="@+id/mrno1"
+            >
+
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/radioSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mrno1"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/Gender_textview"
+
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:checked="true"
+                android:text="@string/radio_male" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:text="@string/radio_female" />
+
+        </RadioGroup>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+           android:id="@+id/lrth1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headsize2"
+            android:layout_marginTop="10dp"
+            app:boxStrokeColor="@color/teal_200"
+
+
+           >
+        <EditText
+            android:id="@+id/length_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/teal_200"
+
+            android:gravity="center"
+            android:hint="Length (cm)"
+
+            android:inputType="numberDecimal"
+
+
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/w12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lrth1"
+            android:layout_marginTop="10dp"
+            app:boxStrokeColor="@color/teal_200"
+          >
+
+
+        <EditText
+            android:id="@+id/weight_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/teal_200"
+            android:gravity="center"
+            android:hint="Wt (gm)"
+
+            android:inputType="numberDecimal"
+            />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+           android:id="@+id/age4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/w12"
+            android:gravity="center"
+            app:boxStrokeColor="@color/teal_200"
+            android:layout_marginTop="10dp"
+
+           >
+            <EditText
+                android:id="@+id/ges_age_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/teal_200"
+                android:gravity="center"
+                android:hint="Gestational age"
+
+                android:inputType="number"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/agedays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/age4"
+            android:gravity="center"
+            app:boxStrokeColor="@color/teal_200"
+            android:layout_marginTop="10dp"
+
+            >
+            <EditText
+                android:id="@+id/age_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/teal_200"
+                android:gravity="center"
+                android:hint="age (days)"
+
+                android:inputType="number"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/hrmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/agedays"
+            android:layout_marginTop="10dp"
+            app:boxStrokeColor="@color/teal_200"
+            >
+            <EditText
+                android:id="@+id/hr_min_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="HR (b/min)"
+                app:boxStrokeColor="@color/teal_200"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/rrmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hrmin"
+            android:layout_marginTop="10dp"
+            app:boxStrokeColor="@color/teal_200"
+
+            >
+            <EditText
+                android:id="@+id/RR_br_min_editttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="RR(br/min)"
+                app:boxStrokeColor="@color/teal_200"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+           android:id="@+id/tem1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rrmin"
+            android:layout_marginTop="10dp"
+            app:boxStrokeColor="@color/teal_200"
+
+            >
+            <EditText
+                android:id="@+id/temp_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Temp (°C)"
+                app:boxStrokeColor="@color/teal_200"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/NextButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/tem1"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/teal_200"
+            android:text="Next"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</ScrollView>

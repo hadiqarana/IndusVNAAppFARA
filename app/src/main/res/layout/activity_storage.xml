@@ -1,0 +1,452 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/parent_constraint"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:background="@color/gray"
+    android:layout_height="match_parent" android:layout_width="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:id="@+id/sibling">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/head_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+
+                android:layout_marginTop="5dp"
+               android:layout_margin="5dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".StorageActivity">
+
+                    <TextView
+                        android:id="@+id/front"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:text="Front"
+                        android:textSize="30sp"
+                        app:layout_constraintEnd_toStartOf="@+id/front_imageview"
+                        app:layout_constraintHorizontal_bias="0.565"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/front_imageview"
+                        android:layout_width="200dp"
+                        android:src="@drawable/ic_baseline_person_24"
+
+                        android:layout_height="match_parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </ImageView>
+
+                    <Button
+                        android:id="@+id/front_pic_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="68dp"
+                        android:text="Take picture"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.063"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                    </Button>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sidecardview"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+
+                android:layout_marginTop="5dp"
+               android:layout_margin="5dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/head_cardview"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/side"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="36dp"
+                        android:text="Side"
+                        android:textSize="30sp"
+                        app:layout_constraintEnd_toStartOf="@+id/side_image"
+                        app:layout_constraintHorizontal_bias="0.552"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/side_image"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_baseline_person_24"
+
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </ImageView>
+
+                    <Button
+                        android:id="@+id/side_pic_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="64dp"
+                        android:text="Take Picture"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/side_image"
+                        app:layout_constraintHorizontal_bias="0.705"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                    </Button>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/head_cardview1"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+
+                android:layout_marginTop="5dp"
+               android:layout_margin="5dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintTop_toBottomOf="@id/sidecardview"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/head"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:text="Head"
+                        android:textSize="30sp"
+                        app:layout_constraintEnd_toStartOf="@+id/head_imageview"
+                        app:layout_constraintHorizontal_bias="0.586"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/head_imageview"
+                        android:layout_width="200dp"
+                        android:src="@drawable/ic_baseline_person_24"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </ImageView>
+
+                    <Button
+                        android:id="@+id/head_pic_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="68dp"
+                        android:text="Take Picture"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/head_imageview"
+                        app:layout_constraintHorizontal_bias="0.666"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                    </Button>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/right_limbs_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+               android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+
+                app:cardCornerRadius="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/head_cardview1"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/right_limbs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="48dp"
+                        android:text=" Right Limb"
+                        android:textSize="25sp"
+                        app:layout_constraintEnd_toStartOf="@+id/right_limbs_imageview"
+                        app:layout_constraintHorizontal_bias="0.572"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </TextView>
+
+                    <Button
+                        android:id="@+id/right_limbs_pic_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="52dp"
+                        android:text="Take Picture"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/right_limbs_imageview"
+                        app:layout_constraintHorizontal_bias="0.485"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                    </Button>
+
+                    <ImageView
+                        android:id="@+id/right_limbs_imageview"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_baseline_person_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </ImageView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/left_limbs_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+
+                app:cardCornerRadius="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/right_limbs_cardview"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/left_limbs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="48dp"
+                        android:text="Left Limb"
+                        android:textSize="25sp"
+                        app:layout_constraintEnd_toStartOf="@+id/left_limbs_imageview"
+                        app:layout_constraintHorizontal_bias="0.572"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </TextView>
+
+                    <Button
+                        android:id="@+id/left_limbs_pic_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="52dp"
+                        android:text="Take Picture"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/left_limbs_imageview"
+                        app:layout_constraintHorizontal_bias="0.485"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                    </Button>
+
+                    <ImageView
+                        android:id="@+id/left_limbs_imageview"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_baseline_person_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </ImageView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/facecardview"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+
+                android:layout_marginTop="5dp"
+               android:layout_margin="5dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintTop_toBottomOf="@id/left_limbs_cardview"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/face"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:text="Face"
+                        android:textSize="30sp"
+                        app:layout_constraintEnd_toStartOf="@+id/face_imageview"
+                        app:layout_constraintHorizontal_bias="0.511"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </TextView>
+
+                    <Button
+                        android:id="@+id/face_pic_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="56dp"
+                        android:text="Take Picture"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/face_imageview"
+                        app:layout_constraintHorizontal_bias="0.8"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                    </Button>
+
+                    <ImageView
+                        android:id="@+id/face_imageview"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_baseline_person_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </ImageView>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/backcardview"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+
+                android:layout_marginTop="5dp"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintTop_toBottomOf="@id/facecardview"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:text="Back"
+                        android:textSize="30sp"
+                        app:layout_constraintEnd_toStartOf="@+id/back_imageview"
+                        app:layout_constraintHorizontal_bias="0.511"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </TextView>
+
+                    <Button
+                        android:id="@+id/back_pic_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="56dp"
+                        android:text="Take Picture"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/back_imageview"
+                        app:layout_constraintHorizontal_bias="0.8"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                    </Button>
+
+                    <ImageView
+                        android:id="@+id/back_imageview"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_baseline_person_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </ImageView>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+            <Button
+                android:id="@+id/upload_images"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+
+                android:backgroundTint="@color/teal_200"
+
+                app:layout_constraintTop_toBottomOf="@id/backcardview"
+
+
+                android:text="Upload Images"
+                >
+
+            </Button>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "64321300286",
+    "project_id": "indusvnaapp",
+    "storage_bucket": "indusvnaapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:64321300286:android:019d9c971f0c2ce8ebee6f",
+        "android_client_info": {
+          "package_name": "com.example.indusvnaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "64321300286-o33dptcqqq9eoqvb1235g15t8pau6hts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrcqdW_yOnVv3isqGTl_SYRT6jlnBVskI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "64321300286-o33dptcqqq9eoqvb1235g15t8pau6hts.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
